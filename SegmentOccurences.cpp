@@ -12,9 +12,9 @@ int main() {
 	cin>>n>>m>>q;
 	string s, t;
 	static char b[N];
-	scanf("%s", b);
+	cin>> b;
 	s = b;
-	scanf("%s", b);
+	cin>>b;
 	t = b;
 
 	p[0] = 0;
@@ -33,9 +33,9 @@ int main() {
 
 	for (int i = 0; i < int(q); i++){
 		int l, r;
-		scanf("%d%d", &l, &r);
+		cin>>l>>r;
 		--l, r -= m - 1;
-		printf("%d\n", r >= l ? p[r] - p[l] : 0);
+		cout<<r >= l ? p[r] - p[l] : 0)<<endl;
 	}
 	return 0;
 }
